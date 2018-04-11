@@ -1,8 +1,8 @@
 <template>
   
-  <div id="app">
-    <Header></Header>
-    <router-view id="content"></router-view>
+  <div id="app" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <Header ></Header>
+    <div id="content" class="mdl-layout__content"><router-view ></router-view></div>
     
     <Footer></Footer>
   </div>
@@ -34,7 +34,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 h1, h2 {
